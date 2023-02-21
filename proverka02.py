@@ -40,23 +40,47 @@
 # print("Жетіспейтін карта: ", missing_card(N,cards))
 
 
+#4/1 Кіші және бас әріптерді қамтитын жол енгізіледі. Бір жағдайда бірдей жолды шығару қажет, 
+# ол қай әріптердің үлкенірек екеніне байланысты. Егер тең болса, кіші әріпке түрлендіріңіз.
+#  Мысалы, «HeLLo World» жолы енгізілсе, оны «hello world» түрлендіру керек, себебі бастапқы
+#   жолда кіші әріптер көбірек. Кодыңызда for циклды пайдаланыңыз. upper() (бас әріпті түрлендіру) 
+#   және lower () (кіші әріпті түрлендіру),
+#  сонымен қатар жолдың немесе таңбаның регистрін тексеретін isupper() және islower() әдістері. 
 
-
-def Turlendiru(soilem):
-    upper_count = 0
-    lower_count = 0
+# def Turlendiru(soilem):
+#     upper_count = 0
+#     lower_count = 0
     
-    for char in soilem:
-        if char.isupper():
-            upper_count = upper_count+1
-        elif char.islower():
-            lower_count = 1 +lower_count
+#     for char in soilem:
+#         if char.isupper():
+#             upper_count = upper_count+1
+#         elif char.islower():
+#             lower_count = 1 +lower_count
             
-    if upper_count > lower_count:
-        return soilem.upper()
-    else:
-        return soilem.lower()
+#     if upper_count > lower_count:
+#         return soilem.upper()
+#     else:
+#         return soilem.lower()
 
-soilem = str(input("soilem zhaz : "))
-turlengen_s = Turlendiru(soilem)
-print(turlengen_s) 
+# soilem = str(input("soilem zhaz : "))
+# turlengen_s = Turlendiru(soilem)
+# print(turlengen_s) 
+
+#4/2 isdigit() жол әдісі жолда тек сандар бар-жоғын тексереді. Енгізуден екі бүтін санды сұрайтын және
+#  олардың қосындысын басып шығаратын программа жазыңыз. Қате енгізілген жағдайда, бағдарлама қатемен 
+#  аяқталмауы керек,
+#  бірақ сандарды сұрауды жалғастыру керек. try-exception ерекше жағдай өңдеушісін пайдаланылмауы керек
+
+while True:
+    try:
+        num1 = input("Nakty san engiziniz: ")
+        num2 = input("Nakty san engiziniz: ")
+        if num1.isdigit() and num2.isdigit():
+            
+            result = int(num1) + int(num2)
+            print("kosyndysy", result)
+            break  
+        else:
+            print("Kate: Nakkty san engiziniz")
+    except:
+        print("Kate: Nakkty san engiziniz")
