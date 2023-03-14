@@ -65,22 +65,137 @@
 # soilem = str(input("soilem zhaz : "))
 # turlengen_s = Turlendiru(soilem)
 # print(turlengen_s) 
+## 10 primer string soilemderge 
+# def Titlee(soilem):
+#     return soilem.title()
+# soilem = str(input("soilem engiz: "))
+# Titlee_s = Titlee(soilem)
+# print(Titlee_s)
+
+# def Rstrip(soilem):
+#     return soilem.swapcase()
+# soilem = str(input("soilem engiz: "))
+# Rstrpp_s = Rstrip(soilem)
+# print(Rstrpp_s)
+
+# text = "Salem alem Hello world"
+# print(len(text))
+# print(text.upper())
+# print(text.lower())
+# print(text.split())
+# print(text.count("a"))
+# print(text.replace("alem", "Hello"))
+# print(text.endswith("testing."))
+
+
+
+
 
 #4/2 isdigit() жол әдісі жолда тек сандар бар-жоғын тексереді. Енгізуден екі бүтін санды сұрайтын және
 #  олардың қосындысын басып шығаратын программа жазыңыз. Қате енгізілген жағдайда, бағдарлама қатемен 
 #  аяқталмауы керек,
 #  бірақ сандарды сұрауды жалғастыру керек. try-exception ерекше жағдай өңдеушісін пайдаланылмауы керек
 
-while True:
-    try:
-        num1 = input("Nakty san engiziniz: ")
-        num2 = input("Nakty san engiziniz: ")
-        if num1.isdigit() and num2.isdigit():
+# while True:
+    # try:
+        # num1 = input("Nakty san engiziniz: ")
+        # num2 = input("Nakty san engiziniz: ")
+        # if num1.isdigit() and num2.isdigit():
             
-            result = int(num1) + int(num2)
-            print("kosyndysy", result)
-            break  
-        else:
-            print("Kate: Nakkty san engiziniz")
-    except:
-        print("Kate: Nakkty san engiziniz")
+        #     result = int(num1) + int(num2)
+        #     print("kosyndysy", result)
+        #     break  
+        # else:
+        #     print("Kate: Nakkty san engiziniz")
+    # except:
+    #     print("Kate: Nakkty san engiziniz")
+
+# text = "This is a sample string for testing."
+# # функция len() - выводит длину строкиprint("Длина строки:", len(text))
+# # метод str.upper() - преобразует строку к верхнему регистру
+# print("Верхний регистр:", text.upper())
+# # метод str.lower() - преобразует строку к нижнему региструprint("Нижний регистр:", text.lower())
+# # метод str.capitalize() - преобразует первую букву строки к верхнему регистру
+# print("Первая буква заглавная:", text.capitalize())
+# # метод str.title() - преобразует каждое слово в строке к начальному заглавному региструprint("Каждое слово с заглавной буквы:", text.title())
+# # метод str.startswith() - возвращает True, если строка начинается с указанной подстроки
+# print("Начинается ли строка с 'This'?", text.startswith("This"))
+# # метод str.endswith() - возвращает True, если строка заканчивается на указанную подстрокуprint("Заканчивается ли строка на 'testing.'?", text.endswith("testing."))
+# # метод str.count() - возвращает количество вхождений указанной подстроки в строке
+# print("Сколько раз встречается подстрока 'is'?", text.count("is"))
+# # метод str.replace() - заменяет указанную подстроку на другую строкуnew_text = text.replace("sample", "new")
+
+
+# 1  Бағдарламалау секцияларына қатысатын әртүрлі топтағы студенттерді таныстыруды сұрайтын бағдарламаны жазыңыз. 
+# Тізімді сыныптардың өсу реті бойынша сұрыптау қажет. Фамилиялар мен сыныптардың тізімін басып шығарыңыз. 
+
+
+# # Создаем пустой словарь для хранения данных об учениках
+# students = {}
+
+# # Запрашиваем количество учеников
+# num_students = int(input("Сколько учеников вы хотите добавить? "))
+
+# # Запрашиваем информацию об учениках и добавляем ее в словарь
+# for i in range(num_students):
+#     name = input("Введите фамилию ученика: ")
+#     grade = int(input("Введите класс ученика: "))
+#     if grade not in students:
+#         students[grade] = []
+#     students[grade].append(name)
+
+# # Упорядочиваем список по возрастанию классов
+# sorted_grades = sorted(students.keys())
+
+# # Распечатываем список фамилий и классов
+# for grade in sorted_grades:
+#     print("Класс {}: {}".format(grade, ", ".join(students[grade])))
+
+
+# 2  Тізім қайтаратын функция жазып шығу. Алдын ала студенттердің пәндері және бағалары бар тізім құрастыр. 
+# Және сол тізім бойынша студенттің атын еңгізген кезде, сол студенттің бағаларын шығарып бертін болсын.
+
+# def get_grades(student_name):
+#     # создаем словарь, содержащий список оценок для каждого ученика
+#     grades = {
+#         "Alice": [4, 5, 4, 3, 5],
+#         "Bob": [3, 2, 4, 5, 4],
+#         "Charlie": [5, 5, 5, 4, 5]
+#     }
+    
+#     # проверяем, есть ли ученик с указанным именем в списке
+#     if student_name in grades:
+#         return grades[student_name]
+#     else:
+#         return "Ученик не найден"
+    
+
+# import random
+
+# # генерируем список из шести случайных чисел
+# numbers = random.sample(range(1, 50), 6)
+
+# # сортируем список и выводим его на экран
+# numbers.sort()
+# print("Номера на вашем лотерейном билете: ", numbers)
+
+
+
+def missing_card(N, cards):
+    return sum(range(1, N + 1)) - sum(cards)
+
+
+for N in range(1, 5):
+    print(N)
+cards = [int(input("Карта нөмірін енгізіңіз: ")) for i in range(N - 1)]
+print("Жетіспейтін карта: ", missing_card(N,cards))
+
+
+
+
+
+
+
+
+
+
