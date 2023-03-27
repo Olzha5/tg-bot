@@ -38,30 +38,30 @@
 # упорядочить список по различным категориям. Вывести результат на
 # экран. 
 
-from itertools import groupby
+# from itertools import groupby
 
-students = []
+# students = []
 
-# #заполнение
-while True:
-    student = {}
-    student['name'] = input('Введите имя учащегося (или "стоп" для завершения ввода): ')
-    if student['name'] == 'стоп':
-        break
-    student['group'] = input('Введите номер группы: ')
-    student['subject'] = input('Введите предмет, который посещает учащийся: ')
-    students.append(student)
+# # #заполнение
+# while True:
+#     student = {}
+#     student['name'] = input('Введите имя учащегося (или "стоп" для завершения ввода): ')
+#     if student['name'] == 'стоп':
+#         break
+#     student['group'] = input('Введите номер группы: ')
+#     student['subject'] = input('Введите предмет, который посещает учащийся: ')
+#     students.append(student)
 
-# сортировка 
-students.sort(students.sort(key=lambda x: x['name']))
+# # сортировка 
+# students.sort(students.sort(key=lambda x: x['name']))
 
-# вывод 
-for group, students_in_group in groupby(students, key=lambda x: x['group']):
-    print(f'Группа {group}:')
-    for student in students_in_group:
-        studentter=student.sort(reverse=True)
-        print(f'\t{student["name"]}, посещает {student["subject"]}')
-        print(f'\t{student["name"]}, посещает {student["subject"]}')
+# # вывод 
+# for group, students_in_group in groupby(students, key=lambda x: x['group']):
+#     print(f'Группа {group}:')
+#     for student in students_in_group:
+#         studentter=student.sort(reverse=True)
+#         print(f'\t{student["name"]}, посещает {student["subject"]}')
+#         print(f'\t{student["name"]}, посещает {student["subject"]}')
 
 
 
