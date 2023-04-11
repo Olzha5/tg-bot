@@ -56,3 +56,22 @@ print(squares)
 print(even_numbers)
 print(sum_of_numbers)
 
+
+
+def delivery_cost(street, product_cost):
+    streets = ["Аль-Фараби", "Сайын", "Ташентский", "Достык"]
+    if street in streets:
+        if product_cost < 10000:
+            return 500
+        else:
+            return 0
+    else:
+        if product_cost < 10000:
+            return 1000
+        else:
+            return 1000
+
+street = "Ташентский"
+product_cost = 12000
+total_cost = delivery_cost(street, product_cost)
+print(total_cost)
