@@ -83,25 +83,25 @@
  
 
 
-#  4. Оқушылардың аты-жөнін бос орынмен бір жолға енгізіңіз. Олардың негізінде
-# кортеж қалыптасады. Экранда осы кортеждегі «ва» фрагменті бар барлық
-# атауларды көрсетіңіз. Атаулар бос орындармен бөлінген бір жолда көрсетіледі.
+# #  4. Оқушылардың аты-жөнін бос орынмен бір жолға енгізіңіз. Олардың негізінде
+# # кортеж қалыптасады. Экранда осы кортеждегі «ва» фрагменті бар барлық
+# # атауларды көрсетіңіз. Атаулар бос орындармен бөлінген бір жолда көрсетіледі.
 
-students = []
+# students = []
 
-for i in range(3):
-    name = input("Оқушының аты жөнін енгізіңіз: ")
-    first_name, last_name = name.split()
-    students.append((first_name, last_name))
-for student in students:
-    if student[0].endswith('ov') or student[1].endswith('ov'):
-        full_name = student[0] + " " + student[1]
-        full_name = full_name.replace(" ", "_")
+# for i in range(3):
+#     name = input("Оқушының аты жөнін енгізіңіз: ")
+#     first_name, last_name = name.split()
+#     students.append((first_name, last_name))
+# for student in students:
+#     if student[0].endswith('ov') or student[1].endswith('ov'):
+#         full_name = student[0] + " " + student[1]
+#         full_name = full_name.replace(" ", "_")
     # if student[0] or "ва" in student[1]:
 
     #     full_name = student[0] + " " + student[1]student[0].endswith('ov')
     #     full_name = full_name.replace(" ", "_")
-        print(full_name)
+        # print(full_name)
 
 
 # 5. Кез келген енгізілген қазақша мəтінді кириллицадан латыншаға түрлендіретін

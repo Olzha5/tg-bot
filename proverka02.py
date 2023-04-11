@@ -181,14 +181,14 @@
 
 
 
-def missing_card(N, cards):
-    return sum(range(1, N + 1)) - sum(cards)
+# def missing_card(N, cards):
+#     return sum(range(1, N + 1)) - sum(cards)
 
 
-for N in range(1, 5):
-    print(N)
-cards = [int(input("Карта нөмірін енгізіңіз: ")) for i in range(N - 1)]
-print("Жетіспейтін карта: ", missing_card(N,cards))
+# for N in range(1, 5):
+#     print(N)
+# cards = [int(input("Карта нөмірін енгізіңіз: ")) for i in range(N - 1)]
+# print("Жетіспейтін карта: ", missing_card(N,cards))
 
 
 
