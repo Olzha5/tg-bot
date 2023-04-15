@@ -1,18 +1,3 @@
-print("HELLO")
-print("HELLO")
-print("lolo")
-print(soso)
-print("HELLO")
-print("HELLO")
-print("lolo")
-print(soso)
-print("Erali")
-print("HELLO")
-print("HELLO")
-print("lolo")
-print(soso)
-print("HELLO")
-print("HELLO")
-print("lolo")
-print(soso)
-print("Erali")
+a = 12
+b =12 
+c = a+b
