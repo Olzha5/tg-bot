@@ -1,1 +1,2 @@
 print("era")
+print ("Olzhas")
