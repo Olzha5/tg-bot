@@ -1,2 +1,2 @@
 print("era")
-print("olzhas pen abi")
+print("asdsasd")
