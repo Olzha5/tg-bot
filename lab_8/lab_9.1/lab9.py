@@ -34,44 +34,7 @@ def tsk():
     return [1, 2, 3], ('a', 'b', 'c'), {'key1': 'value1', 'key2': 'value2'}
 print(tsk())
 
-# Map, Filter и Reduce функцияларынқолданыпмысалкелтіреміз. Айырмашылықтарынанықтаймыз.
-from functools import reduce
-
-def square(x):
-    return x * x
-
-def is_even(x):
-    return x % 2 == 0
-
-def add(x, y):
-    return x + y
-
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-squares = list(map(square, numbers))
-even_numbers = list(filter(is_even, numbers))
-sum_of_numbers = reduce(add, numbers)
-
-print(squares)
-print(even_numbers)
-print(sum_of_numbers)
 
 
 
-def delivery_cost(street, product_cost):
-    streets = ["Аль-Фараби", "Сайын", "Ташентский", "Достык"]
-    if street in streets:
-        if product_cost < 10000:
-            return 500
-        else:
-            return 0
-    else:
-        if product_cost < 10000:
-            return 1000
-        else:
-            return 1000
 
-street = "Ташентский"
-product_cost = 12000
-total_cost = delivery_cost(street, product_cost)
-print(total_cost)

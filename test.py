@@ -27,10 +27,13 @@ def find_river(river, countries):
         if river in rivers:
             return True
     return False
+
+
 def eldegi_ozen(country, countries):
     if country in countries:
         print(f"{country}")
-        +
+        for river in countries[country]:
+            print(river)
    
 country_name = input("Ел енгіз: ")
 eldegi_ozen(country_name, countries)

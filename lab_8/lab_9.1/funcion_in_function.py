@@ -3,16 +3,16 @@ def compose(f, g):
         return f(g(x))
     return h
 
+# Пример использования функции compose
 def square(x):
     return x * x
 
 def double(x):
     return x * 2
 
-f = square
-g = double
-h = compose(f, g)
+# Создаем композицию функций square и double
+composed_function = compose(square, double)
 
-x = 3
-result = h(x)
-print(result) # (3 * 2) * (3 * 2) = 36
+# Вызываем новую функцию h(x) с аргументом x = 3
+result = composed_function(3)
+print(result)  # Вывод: 36, так как square(double(3)) = square(6) = 36
